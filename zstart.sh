@@ -15,11 +15,11 @@ readonly INPUT_HELPER="${ZIRC_BASE}/zin0.sh"
 readonly ZCONF="${HOME_DIR}/.config/zirc"
 
 # IRC Connection Settings
-readonly SERVER="irc.libera.chat"
+readonly SERVER="irc.libera.chat" # IMPORTANT: Adjust to your network
 readonly PORT=6697
-readonly NICK="your_nick"
+readonly NICK="your_nick" # IMPORTANT: Adjust to your nick
 readonly PASSWORD_ARG="prompt" # Using 'prompt' for security
-readonly CHANNEL="##"
+readonly CHANNEL="##" # IMPORTANT: Hardwired in z25
 
 # Tmux Settings
 readonly WINDOW_NAME="Double-Octothorpe"
