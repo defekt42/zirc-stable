@@ -1,6 +1,12 @@
 # zirc
 OpenBSD Hardened IRC Client that is terminal-based and written in C with Libevent + OpenSSL/TLS, designed for security.
 
+Usage: ./z25 irc.libera.chat 6697 your_nick prompt
+
+zirc-sec-stable build:
+cc -o z25 z25.c -I/usr/local/include -L/usr/local/lib -lssl -lcrypto -levent_openssl -levent_core -levent_extra -levent -O2 -Wall -Wextra -Wpedantic -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fPIE -pie -Wformat -Wformat-security
+
+
 ## TL;DR: ZIRC-SEC v2.5 Security
 
 - **Pledge (OpenBSD)**: Limits system calls (`stdio`, `inet`, `dns`, `rpath`, `tty`), tightening post-connection.
@@ -58,13 +64,7 @@ The ZIRC-SEC v2.1 IRC client is designed with a strong focus on security, incorp
 •  Command-Line Warning: Alerts users to the risks of command-line password visibility in process lists, recommending the prompt option for secure input.
 •  Secure Storage and Validation: Passwords are stored in dynamically allocated memory, zeroized after use, and validated for length and content to prevent overflows or injections.
 
-ZIRC-SEC v2.1 employs a defense-in-depth approach, integrating TLS encryption, sandboxing, memory safety, input sanitization, and robust error handling. Features like pledge(), unveil(), ANSI escape stripping, rate limiting, and secure password management address specific attack vectors. Critical fixes in v1.7 and new unveil() support in v1.8 enhance vulnerability patching and filesystem restrictions, making for secure IRC communications.
-
-
-Usage: ./zirc-sec-stable-v2.5 irc.libera.chat 6697 your_nick prompt
-
-zirc-sec-stable build:
-cc -o zirc-sec-stable-v2.5 zirc-sec-stable-v1.9.c -I/usr/local/include -L/usr/local/lib -lssl -lcrypto -levent_openssl -levent_core -levent_extra -levent -O2 -Wall -Wextra -Wpedantic -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fPIE -pie -Wformat -Wformat-security
+ZIRC-SEC v2.5 employs a defense-in-depth approach, integrating TLS encryption, sandboxing, memory safety, input sanitization, and robust error handling. Features like pledge(), unveil(), ANSI escape stripping, rate limiting, and secure password management address specific attack vectors. Critical fixes in v1.7 and new unveil() support in v1.8 enhance vulnerability patching and filesystem restrictions, making for secure IRC communications.
 
 
 Copyright © 2025 by defekt
