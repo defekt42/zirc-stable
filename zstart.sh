@@ -1,5 +1,5 @@
 #!/bin/sh
-# zstart.sh — Fully integrated secure IRC launcher
+# zstart.sh — Fully integrated secure IRC launcher for Z.2.5
 
 # --- Minimal Secure Environment ---
 # Set a minimal, secure PATH to prevent executing spoofed binaries
@@ -8,16 +8,16 @@ export PATH
 
 # --- Configuration ---
 readonly SESSION="zirc"
-readonly HOME_DIR="/home/defekt" # IMPORTANT: Adjust if your HOME is different
-readonly ZIRC_BASE="${HOME_DIR}/.suckless/irc/zirc-sec"
-readonly IRC_CLIENT="${ZIRC_BASE}/z23"
+readonly HOME_DIR="/home/your_name" # IMPORTANT: Adjust if your HOME is different
+readonly ZIRC_BASE="${HOME_DIR}/your_dir" # IMPORTANT: Adjust if your client is in different dir
+readonly IRC_CLIENT="${ZIRC_BASE}/z25"
 readonly INPUT_HELPER="${ZIRC_BASE}/zin0.sh"
 readonly ZCONF="${HOME_DIR}/.config/zirc"
 
 # IRC Connection Settings
 readonly SERVER="irc.libera.chat"
 readonly PORT=6697
-readonly NICK="defekt"
+readonly NICK="your_nick"
 readonly PASSWORD_ARG="prompt" # Using 'prompt' for security
 readonly CHANNEL="##"
 
