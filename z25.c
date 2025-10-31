@@ -1110,7 +1110,7 @@ int main(int argc, char **argv) {
     printf(ANSI_BOLD ANSI_BRIGHT_YELLOW
            "════════════════════════════════════════════════════════\n"
            ANSI_RESET);
-    printf(ANSI_BOLD "  ZIRC-IRC v2.2 - Fully Hardened IRC Client\n" ANSI_RESET);
+    printf(ANSI_BOLD "  ZIRC-IRC v2.5 - Fully Hardened IRC Client\n" ANSI_RESET);
     printf(ANSI_BOLD ANSI_BRIGHT_YELLOW
            "════════════════════════════════════════════════════════\n"
            ANSI_RESET);
@@ -1176,7 +1176,7 @@ int main(int argc, char **argv) {
     printf(ANSI_BOLD ANSI_BRIGHT_YELLOW "                    ▘      ▘    \n" ANSI_RESET);
     printf("  " ANSI_BOLD ANSI_BRIGHT_YELLOW"                ▀▌▌▛▘▛▘  ▌▛▘▛▘\n");
     printf("  " ANSI_BOLD ANSI_BRIGHT_YELLOW"                ▙▖▌▌ ▙▖  ▌▌ ▙▖\n");
-    printf("                  Version Z.2.2 \n");
+    printf("                  Version Z.2.5 \n");
     printf("\n");
     printf(ANSI_BOLD ANSI_BRIGHT_YELLOW
            "═══════════════════════════════════════════════════════════\n"
