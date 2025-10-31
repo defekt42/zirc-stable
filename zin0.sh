@@ -1,5 +1,5 @@
 #!/bin/sh
-# zin0.sh — Minimalist, High-Security tmux input helper (use with zirc v2.2)
+# zin0.sh — Minimalist, High-Security tmux input helper (use with zirc v2.5)
 
 PANE="zirc:0.0"
 PROMPT="zirc> "
