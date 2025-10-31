@@ -10,23 +10,23 @@ export PATH
 readonly SESSION="zirc"
 readonly HOME_DIR="/home/your_name" # IMPORTANT: Adjust if your HOME is different
 readonly ZIRC_BASE="${HOME_DIR}/your_dir" # IMPORTANT: Adjust if your client is in different dir
-readonly IRC_CLIENT="${ZIRC_BASE}/z25"
-readonly INPUT_HELPER="${ZIRC_BASE}/zin0.sh"
-readonly ZCONF="${HOME_DIR}/.config/zirc"
+readonly IRC_CLIENT="${ZIRC_BASE}/z25" # Name of executable
+readonly INPUT_HELPER="${ZIRC_BASE}/zin0.sh" # Input script
+readonly ZCONF="${HOME_DIR}/.config/zirc" # nicklist and blacklist live here
 
 # IRC Connection Settings
 readonly SERVER="irc.libera.chat" # IMPORTANT: Adjust to your network
-readonly PORT=6697
+readonly PORT=6697 # Secure port
 readonly NICK="your_nick" # IMPORTANT: Adjust to your nick
 readonly PASSWORD_ARG="prompt" # Using 'prompt' for security
-readonly CHANNEL="##" # IMPORTANT: Hardwired in z25
+readonly CHANNEL="##" # Notice: Hardwired in z25 change to preffered start channel or come say "hi"
 
 # Tmux Settings
-readonly WINDOW_NAME="Double-Octothorpe"
+readonly WINDOW_NAME="Double-Octothorpe" # IMPORTANT: Adjust to your preffered name
 readonly OUTPUT_PANE="irc-output"
 readonly INPUT_PANE="rlwrap-input"
 readonly HISTORY_LIMIT=10000
-readonly INPUT_HEIGHT=1 # Height of the input pane (1 line)
+readonly INPUT_HEIGHT=1 # Height of the input pane (is draggable with mouse)
 
 # --- Helper Functions ---
 
