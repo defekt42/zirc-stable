@@ -31,11 +31,7 @@ if [ ! -f "$BLACKLIST_FILE" ]; then
 ^password$
 ^Password$
 ^prompt$
-^boat$
-^bort$
-^brot$
-^aibird$
-^snot$
+^someNick$
 EOF
     chmod 600 "$BLACKLIST_FILE"
 fi
