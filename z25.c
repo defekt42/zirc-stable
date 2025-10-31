@@ -1,10 +1,10 @@
 /*
- * Secure IRC Client (Libevent + TLS) - ZIRC-IRC v2.2
+ * Secure IRC Client (Libevent + TLS) - ZIRC-IRC v2.5
  *
  * FULLY HARDENED - Maximum Security Configuration
  *
  * Compile on OpenBSD:
- * cc -o zirc-irc z22.c \
+ * cc -o z25 z25.c \
  *    -I/usr/local/include -L/usr/local/lib \
  *    -lssl -lcrypto -levent_openssl -levent_core -levent_extra -levent \
  *    -lm -lpthread -lutil \
@@ -16,7 +16,7 @@
  *    -Wl,-z,relro,-z,now
  *
  * Usage:
- *   ./zirc-irc <server> <port> <nick> [prompt]
+ *   ./z25 <server> <port> <nick> [prompt]
  */
 
 #include <stdio.h>
